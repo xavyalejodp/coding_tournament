@@ -66,7 +66,8 @@ from the past)
 ![](docs/screens/filter.png?raw=true)
 
 6.- There should be a Feed sidebar that displays the last 10 events in realtime with option 
-to load more.
+to load more. If I click on an event in this feed the main map zooms and the Info window of the event
+is opened automatically.
 
 ![](docs/screens/feed.png?raw=true)
 
@@ -115,6 +116,7 @@ Process to send your work
     - Full Name and ID
     - Features included in the Code
     - Incomplete or buggy features
+    - How to install and run the Frontend and Backend
     - Any final comments about the Challenge
     
 *Note: We will only accept commits before the challenge time ending. Any attempt to manipulate or 
