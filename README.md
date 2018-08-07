@@ -1,4 +1,5 @@
-#Introduction
+Introduction
+======
 
 Deliktum is a platform for the public to report crimes on Quito. This platform was also changed a bit
 to be used in the last earthquake in Ecuador. The technology and stack used at the time was Google Maps,
@@ -9,7 +10,8 @@ in Google maps, like clustering.
 
 The main idea of this Challenge is to revamp the application using a modern approach and modern tools.
 
-#Technologies Allowed
+Technologies Allowed
+======
 
 - Javascript as the main Language
     - Frontend Frameworks
@@ -29,7 +31,8 @@ The main idea of this Challenge is to revamp the application using a modern appr
         
 You have the liberty to use any other dependencies or NPM packages commonly used in the JS community.
 
-#Specs
+Specs
+======
 
 1.- The main view of the app should be the map that is zoomed automatically to show all events displayed
 in the map. Render a Map component that let you click on certain points on the map to retrieve the 
