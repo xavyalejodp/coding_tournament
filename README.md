@@ -45,7 +45,7 @@ location information and also click on displayed items that show the detailed in
 ![](docs/screens/cluster.png?raw=true)
 
 3.- Every event needs a unique URL to be easily shared to other persons. This unique URl zooms
-the map and opens the Event info Window automatically
+the map and opens the Event info Window automatically.
 
 4.- There should be a button to report an event, clicking on it should open the form to create an 
 event (Panel should slide from right, open in a modal or something else, be creative!)
@@ -77,3 +77,60 @@ Extra Points:
 - Great Mobile experience
 - Configurable to use in other cities/regions
 - Multilingual support
+- Automatic Testing
+
+The evaluation criteria
+======
+
+- Frontend (100%)
+    - Features (25%)
+    - Maps integration (15%)
+    - Code Modularity (15%)
+    - SOLID principles (10%)
+    - State management (10%)
+    - Browser API (5%)
+    - UI and usability (10%)
+    - Dependencies Usage (5%)
+    - Documentation  (5%)
+    
+- Backend (100%)
+     - REST or GraphQL endpoints (25%)
+     - Data Modeling and MongoDB Use (10%)
+     - Security (10%)
+     - Code Modularity (15%)
+     - SOLID principles (10%)
+     - Framework knowledge (10%)
+     - Performance (10%)
+     - Dependencies Usage (5%)
+     - Documentation  (5%)
+
+Process to send your work
+======
+
+- Fork this repository in your own github account
+- Clone your forked repository and work locally
+- Push your changes to your forked repository
+- Create a Pull request from your forked repository into this repository
+- Create a detailed description in your Pull request. Things to include:
+    - Full Name and ID
+    - Features included in the Code
+    - Incomplete or buggy features
+    - Any final comments about the Challenge
+    
+*Note: We will only accept commits before the challenge time ending. Any attempt to manipulate or 
+rewrite the commit history will make PR disqualified*
+
+Rules
+======
+
+- Any attempt to use outside help will disqualify the challenge
+- The PR should be done the Challenge ending time
+- Only the specified technologies are allowed
+- Features that are not specified in the specs won't change the final score
+- Extra specs will improve the final score and will be analyzed indepently of the general score by
+the Judges.
+- Leaving the campus premises is not allowed 
+- Not being on time 
+
+
+
