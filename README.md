@@ -14,19 +14,19 @@ Technologies
 ======
 
 - Javascript as the main Language
-    - Accepted Frontend Frameworks
+    - Recommended Frontend Frameworks
         - ReactJS
         - Angular+
         - Vue.JS
-    - Backend Frameworks using Node.js
+    - Recommended Backend Frameworks
         - Express
         - Loopback
         - Hapi
         - Or any other modern and open source NodeJs framework of your choosing
-    - Storage
+    - Recommended Storage
         - MongoDB
         - Or any other modern and open source NoSQL database of your choosing
-    - Maps
+    - Recommended Map Platforms
         - Google Maps
         - OpenStreet Maps
         - Leaflet
