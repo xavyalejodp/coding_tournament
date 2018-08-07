@@ -1,38 +1,44 @@
 Introduction
 ======
 
-Deliktum is a platform for the public to report crimes on Quito. This platform was also changed a bit
-to be used in the last earthquake in Ecuador. The technology and stack used at the time was Google Maps,
-JS Backbone and Ruby on Rails at the backend. We had to invent at the time things that did not exist
-in Google maps, like clustering.
+Deliktum is a free platform for the public to report crimes on Quito. This platform was also changed a bit
+to be used in the last earthquake in Ecuador. The technologies and stacks used at the time were Google Maps,
+JS Backbone and Ruby on Rails. We had to code at the time things that did not exist in Google maps, 
+like clustering.
 
 ![](docs/screens/main.png?raw=true)
 
-The main idea of this Challenge is to revamp the application using a modern approach and modern tools.
+The main idea of this Challenge is to revamp Deliktum using a modern approach and modern tools.
 
-Technologies Allowed
+Technologies
 ======
 
 - Javascript as the main Language
-    - Frontend Frameworks
+    - Accepted Frontend Frameworks
         - ReactJS
-        - AngularJS
+        - Angular+
         - Vue.JS
-    - Backend Framework using Node.js
+    - Backend Frameworks using Node.js
         - Express
         - Loopback
         - Hapi
+        - Or any other modern and open source NodeJs framework of your choosing
     - Storage
         - MongoDB
+        - Or any other modern and open source NoSQL database of your choosing
     - Maps
         - Google Maps
         - OpenStreet Maps
         - Leaflet
+        - Or any other modern Map platform of your choosing
         
 You have the liberty to use any other dependencies or NPM packages commonly used in the JS community.
 
 Specs
 ======
+
+A simple functional UI experience is expected without emulating or doing a pixel perfect implementation on how
+Deliktum currently looks.
 
 1.- The main view of the app should be the map that is zoomed automatically to show all events displayed
 in the map. Render a Map component that let you click on certain points on the map to retrieve the 
@@ -65,7 +71,7 @@ from the past)
 
 ![](docs/screens/filter.png?raw=true)
 
-6.- There should be a Feed sidebar that displays the last 10 events in realtime with option 
+6.- There should be a Feed sidebar that displays the last 10 events with option 
 to load more. If I click on an event in this feed the main map zooms and the Info window of the event
 is opened automatically.
 
@@ -74,7 +80,7 @@ is opened automatically.
 Extra Points:
 
 - Retrieve user current location and zoom to the location
-- Good design (Use Material Design, Semantic-UI, Bootstrap, etc)
+- Use Material Design, Semantic-UI, Bootstrap, etc...
 - Great Mobile experience
 - Configurable to use in other cities/regions
 - Multilingual support
@@ -87,12 +93,12 @@ The evaluation criteria
     - Features (25%)
     - Maps integration (15%)
     - Code Modularity (15%)
-    - SOLID principles (10%)
+    - SOLID principles (15%)
     - State management (10%)
     - Browser API (5%)
-    - UI and usability (10%)
+    - UI (15%)
     - Dependencies Usage (5%)
-    - Documentation  (5%)
+    - Documentation (5%)
     
 - Backend (100%)
      - REST or GraphQL endpoints (25%)
@@ -108,7 +114,7 @@ The evaluation criteria
 Process to send your work
 ======
 
-- Fork this repository in your own github account
+- Fork this repository in your own Github account
 - Clone your forked repository and work locally
 - Push your changes to your forked repository
 - Create a Pull request from your forked repository into this repository
@@ -118,21 +124,16 @@ Process to send your work
     - Incomplete or buggy features
     - How to install and run the Frontend and Backend
     - Any final comments about the Challenge
-    
-*Note: We will only accept commits before the challenge time ending. Any attempt to manipulate or 
-rewrite the commit history will make PR disqualified*
 
-Rules
+Tech Rules
 ======
 
 - Any attempt to use outside help will disqualify the challenge
-- The PR should be done the Challenge ending time
-- Only the specified technologies are allowed
+- The PR should be sent before the Challenge ending time
+- We will only accept commits before the challenge time ending. Any attempt to manipulate or rewrite
+ the commit history will make the PR disqualified.
 - Features that are not specified in the specs won't change the final score
-- Extra specs will improve the final score and will be analyzed indepently of the general score by
-the Judges.
-- Leaving the campus premises is not allowed 
-- Not being on time 
+- Extra specs will improve the final score and will be analyzed and scored independently
 
 
 
