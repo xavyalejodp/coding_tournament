@@ -1,14 +1,15 @@
 Introduction
 ======
 
-Deliktum is a free platform for the public to report crimes on Quito. This platform was also changed a bit
+Deliktum.com is a free platform for the public to report crimes on Quito. This platform was also changed a bit
 to be used in the last earthquake in Ecuador. The technologies and stacks used at the time were Google Maps,
-JS Backbone and Ruby on Rails. We had to code at the time things that did not exist in Google maps, 
-like clustering.
+JS Backbone and Ruby on Rails.
 
 ![](docs/screens/main.png?raw=true)
 
-The main idea of this Challenge is to revamp Deliktum using a modern approach and modern tools.
+The main idea is to revamp Deliktum using a modern approach and stack.
+
+[Introduction slides here.](https://docs.google.com/presentation/d/1ZsJNe9UP7RaZ958UQaNhZJOUDWFbXXz8FS-PoGuzT-s/)
 
 Technologies
 ======
@@ -50,15 +51,12 @@ location information and also click on displayed items that show the detailed in
 
 ![](docs/screens/cluster.png?raw=true)
 
-3.- Every event needs a unique URL to be easily shared to other persons. This unique URl zooms
-the map and opens the Event info Window automatically.
-
-4.- There should be a button to report an event, clicking on it should open the form to create an 
+3.- There should be a button to report an event, clicking on it should open the form to create an 
 event (Panel should slide from right, open in a modal or something else, be creative!)
 Use the following fields:
 
 - Description (Text field)
-- Type of event (Relationship to a table of type of events)
+- Type of event (Relationship to an Entity for type of events)
 - Date and time of the event (default value is current time, but user can select a different date 
 from the past)
 - Location (User should click on map to get location - latitude,longitude -)
@@ -66,22 +64,24 @@ from the past)
 
 ![](docs/screens/report.png?raw=true)
 
-5.- As a user I should be able to filter the events by type of event or point in time 
-(all, today, last week, last month, last year)
+4.- As a user I should be able to filter the events by type of event or point in time 
+(all, today, last week, last month, last year).
 
 ![](docs/screens/filter.png?raw=true)
 
-6.- There should be a Feed sidebar that displays the last 10 events with option 
-to load more. If I click on an event in this feed the main map zooms and the Info window of the event
-is opened automatically.
+5.- There should be a Feed sidebar that displays the last 10 events with option 
+to load more. If I click on an event in this feed the main map zooms and the Info window is opened automatically.
 
 ![](docs/screens/feed.png?raw=true)
 
-Extra Points:
+6.- Every event needs a unique URL to be easily shared to other persons. This unique URl zooms
+the map and opens an Event Info Window automatically.
+
+7.- Extra Points:
 
 - Retrieve user current location and zoom to the location
 - Use Material Design, Semantic-UI, Bootstrap, etc...
-- Great Mobile experience
+- Responsive
 - Configurable to use in other cities/regions
 - Multilingual support
 - Automatic Testing
@@ -122,7 +122,6 @@ Process to send your work
     - Full Name and ID
     - Features included in the Code
     - Incomplete or buggy features
-    - How to install and run the Frontend and Backend
     - Any final comments about the Challenge
 
 Tech Rules
@@ -131,7 +130,7 @@ Tech Rules
 - Any attempt to use outside help will disqualify the challenge
 - The PR should be sent before the Challenge ending time
 - We will only accept commits before the challenge time ending. Any attempt to manipulate or rewrite
- the commit history will make the PR disqualified.
+ the commit history will make the PR disqualified
 - Features that are not specified in the specs won't change the final score
 - Extra specs will improve the final score and will be analyzed and scored independently
 
