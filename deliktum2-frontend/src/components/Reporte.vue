@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-backdrop">
+  <div class="modal-backdrop" style="position:right">
     <div class="modal">
       <header class="modal-header">
         <slot name="header">
@@ -25,14 +25,20 @@
       right
       color="success"
     >
-      <span>Registration successful!</span>
+      <span>Registro exitoso!</span>
       <v-icon dark>check_circle</v-icon>
     </v-snackbar>
     <v-form ref="form" @submit.prevent="submit">
       <v-container grid-list-xl fluid>
         <v-layout wrap>
-          
-          <v-flex xs12>
+          <v-flex xs12 sm6>
+        <v-combobox
+          v-model="select"
+          :items="items"
+          label="Seleccione el tipo de incidente"
+        ></v-combobox>
+      </v-flex>
+          <v-flex xs12 >
             <v-textarea
               v-model="form.bio"
               color="teal"
@@ -75,6 +81,7 @@
       
          <v-spacer></v-spacer>
         <v-btn
+          v-on:click="addReporte"
           flat
           color="primary"
           type="submit"
@@ -134,7 +141,14 @@ import axios from 'axios'
         content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.`,
         snackbar: false,
         terms: false,
-        defaultForm
+        defaultForm,
+        select: 'Asalto',
+        items: [
+          'Robo',
+          'Pelea',
+          'Borrachera',
+          'Venta d Drogas'
+        ]
       }
     },
     methods: {
@@ -151,14 +165,19 @@ import axios from 'axios'
       },
        addReporte(){
             const data ={
-            email: this.email,
-            createdAt: this.createdAt
+            
+            tipo: this.select,
+            descripcion: this.form.bio,
+            placas:this.form.first,
+            fechaDelito:this.form.last,
+            imagen: null,
+            localizacion: null,
+            usuario:''
             }
 
             axios.put("http://localhost:3000/api/Reportes", data).then((response) => {
           console.log(response);
-          this.getAccounts();
-          this.clearInput();
+          
 
         })
 

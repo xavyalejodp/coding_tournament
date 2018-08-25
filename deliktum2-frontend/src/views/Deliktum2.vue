@@ -37,11 +37,11 @@
     >
       Open Modal!
     </button>
-
+<div >
      <Reporte v-show="isModalVisible"
       @close="closeModal"/>
       </div>
-
+</div>
 
       
   </div>
