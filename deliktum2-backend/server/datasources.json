@@ -1,0 +1,12 @@
+{
+  "deliktum2": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "test",
+    "password": "",
+    "name": "deliktum2",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

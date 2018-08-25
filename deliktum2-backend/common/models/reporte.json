@@ -1,0 +1,35 @@
+{
+  "name": "Reporte",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tipo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "placas": {
+      "type": "string"
+    },
+    "fechaDelito": {
+      "type": "date"
+    },
+    "imagen": {
+      "type": "buffer"
+    },
+    "localizacion": {
+      "type": "geopoint"
+    },
+    "usuario": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

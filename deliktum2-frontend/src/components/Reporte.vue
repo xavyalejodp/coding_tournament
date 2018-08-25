@@ -69,7 +69,6 @@
         <v-btn
           flat
           color="primary"
-          type="submit"
         >Sube una imagen</v-btn>
         <v-spacer></v-spacer>
       
@@ -104,6 +103,9 @@
 </template>
 
 <script>
+
+import axios from 'axios'
+
   export default {
     name: 'modal',
 
@@ -146,7 +148,22 @@
       submit () {
         this.snackbar = true
         this.resetForm()
-      }
+      },
+       addReporte(){
+            const data ={
+            email: this.email,
+            createdAt: this.createdAt
+            }
+
+            axios.put("http://localhost:3000/api/Reportes", data).then((response) => {
+          console.log(response);
+          this.getAccounts();
+          this.clearInput();
+
+        })
+
+
+        }
     },
     computed: {
       formIsValid () {
