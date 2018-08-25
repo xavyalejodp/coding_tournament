@@ -30,15 +30,17 @@
     </v-snackbar>
     <v-form ref="form" @submit.prevent="submit">
       <v-container grid-list-xl fluid>
-        <v-layout wrap>
-          <v-flex xs12 sm6>
+          <v-flex >
         <v-combobox
           v-model="select"
           :items="items"
           label="Seleccione el tipo de incidente"
         ></v-combobox>
+        
       </v-flex>
-          <v-flex xs12 >
+        <v-layout wrap>
+        
+          <v-flex  xs12 >
             <v-textarea
               v-model="form.bio"
               color="teal"
