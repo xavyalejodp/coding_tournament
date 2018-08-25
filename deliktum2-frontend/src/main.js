@@ -5,7 +5,10 @@ import router from './router'
 import store from './store'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import BootstrapVue from 'bootstrap-vue'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
+Vue.use(Vuetify)
 Vue.config.productionTip = false
 
 
@@ -37,6 +40,7 @@ Vue.use(VueGoogleMaps, {
 
 
 Vue.use(BootstrapVue);
+//Vue.use(Reporte);
 
 new Vue({
   router,

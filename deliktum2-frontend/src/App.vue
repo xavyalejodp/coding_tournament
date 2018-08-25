@@ -24,17 +24,12 @@
           </v-list-tile-content>
          
         </v-list-tile>
-        <v-list-tile>
-
-            <div>
-    <ul>
-        <li v-for="feed in feeds" v-bind:key="feed">
-                {{feed}}
-        </li>
-    </ul>  
-    </div>
-        </v-list-tile>
+        
       </v-list>
+      
+     
+          <Feeds/>
+      
     </v-navigation-drawer>
     <v-toolbar
       app
@@ -82,6 +77,7 @@
 </template>
 
 <script>
+import Feeds from './components/Feeds.vue'
 
 export default {
   name: 'App',
@@ -100,6 +96,10 @@ export default {
       title: 'Deliktum V2',
        feeds: ["Evento 1","Evento 2","Evento 3"],
     }
-  }
+  },
+  components: {
+      Feeds
+    }
+  
 }
 </script>
